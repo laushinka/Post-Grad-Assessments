@@ -8,10 +8,21 @@
 
 # Eg. for our books and authors your deliverable would look like
 
-# books
-id | title | author_id
+# restaurant belongs to owner
+# restaurant has many reviews
+# restaurant has many customers
+# assuming restaurant only has one owner
+id | name | owner_id
 
-# author
+# review belongs to customer
+# review belongs to restaurant
+id | title | customer_id | restaurant_id
+
+# customer has many reviews
+id | name |
+
+# owner has many restaurants
+# owner has many reviews through restaurants
 id | name |
 
 # Hints:
