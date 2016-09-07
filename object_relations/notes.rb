@@ -10,5 +10,14 @@
   # Restaurant#customers
   # Restaurant#reviews
 
-# If you are not re-sketching out your domain, and thinking about single source of truth, 
+# If you are not re-sketching out your domain, and thinking about single source of truth,
 # you are doing it wrong.
+
+Customer has many restaurants
+Customer has many reviews
+
+Restaurant has many customers
+Restaurant has many reviews
+
+Review belongs to a customer
+Review belongs to a restaurant
