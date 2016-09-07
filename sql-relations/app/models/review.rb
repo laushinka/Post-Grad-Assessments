@@ -21,7 +21,11 @@ class Review
   end
 
   def restaurant
-    
+    sql = <<-SQL
+      SELECT restaurants.* FROM reviews
+      JOIN restaurants
+      WHERE reviews.id = ?
+    SQL
+    self.class.db.execute(sql, self.id)
   end
-
 end
