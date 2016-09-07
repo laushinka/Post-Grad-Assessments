@@ -1,3 +1,6 @@
+# Customer has many reviews
+# Customer has many restaurants through reviews
+
 class Customer
   attr_accessor :name, :reviews
   @@all = []
