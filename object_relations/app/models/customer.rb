@@ -1,3 +1,4 @@
+# Customer initializes with a name
 # Customer has many reviews
 # Customer has many restaurants through reviews
 
